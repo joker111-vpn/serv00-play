@@ -43,7 +43,7 @@ toTGMsg() {
   if [[ "$msg" != Host:* ]]; then
     local formatted_msg="${title}  \n\n"
     formatted_msg+="${time_icon} *时间：* ${current_time}  \n"
-    formatted_msg+="${notify_icon} *通知内容：*    \n$msg  \n\n"
+    formatted_msg+="${notify_icon} *通知内容：已运行保活*    \n$msg  \n\n"
     echo -e "$formatted_msg"
     return
   fi
